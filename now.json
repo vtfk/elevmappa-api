@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "name": "elevmappa-api",
+  "alias": [
+    "api.elevmappa.no"
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "BUDDY_SERVICE_URL": "@minelev-buddy-service-url",
+    "BUDDY_JWT_SECRET": "@minelev-jwt-secret",
+    "MOA_TENANT_ID": "@moa-tenant-id",
+    "MOA_APP_ID": "@moa-app-id"
+  },
+  "builds": [
+    { "src": "/index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
