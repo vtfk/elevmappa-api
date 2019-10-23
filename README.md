@@ -99,6 +99,7 @@ Returns an object of given student with available documents
   ],
   "documents": [
     {
+      "source": "TFK",
       "id": "16/03875-1",
       "title": "Lullabies from the edge",
       "files": [
@@ -111,6 +112,7 @@ Returns an object of given student with available documents
       ]
     },
     {
+      "source": "TFK",
       "id": "16/03875-2",
       "title": "Salige reker",
       "files": [
@@ -123,7 +125,8 @@ Returns an object of given student with available documents
       ]
     },
     {
-      "id": "16/03875-3",
+      "source": "VTFK",
+      "id": "20/00345-1",
       "title": "It came from Søre Ål",
       "files": [
         {
@@ -148,9 +151,15 @@ Environment
 TJOMMI_SERVICE_URL=https://tjommi.service.io
 TJOMMI_JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
 MOA_TENANT_ID=your-azure-tenant
-P360_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
-P360_WS_USERNAME=domain/username
-P360_WS_PASSWORD=password
+P360_VTFK_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
+P360_VTFK_WS_USERNAME=domain/username
+P360_VTFK_WS_PASSWORD=password
+P360_TFK_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
+P360_TFK_WS_USERNAME=domain/username
+P360_TFK_WS_PASSWORD=password
+P360_VFK_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
+P360_VFK_WS_USERNAME=domain/username
+P360_VFK_WS_PASSWORD=password
 PAPERTRAIL_HOST=example.papertrailapp.com
 PAPERTRAIL_PORT=port
 PAPERTRAIL_HOSTNAME=minelev-elevmappa
