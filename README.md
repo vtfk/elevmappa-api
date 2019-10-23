@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/telemark/minelev-elevmappa-api.svg?branch=master)](https://travis-ci.com/telemark/minelev-elevmappa-api)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-# minelev-elevmappa-api
+# elevmappa-api
 
 Lambda for returning all your students
 
