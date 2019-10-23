@@ -1,10 +1,27 @@
 module.exports = {
-  username: process.env.P360_WS_USERNAME || 'domain/username',
-  password: process.env.P360_WS_PASSWORD || 'password',
-  baseUrl: process.env.P360_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/',
-  buddy: {
-    url: process.env.BUDDY_SERVICE_URL || 'url-buddy-secret',
-    jwtSecret: process.env.BUDDY_JWT_SECRET || 'jwt-secret'
+  P360: [
+    {
+      name: 'VTFK',
+      username: process.env.P360_VTFK_WS_USERNAME || 'domain/username',
+      password: process.env.P360_VTFK_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_VTFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+    },
+    {
+      name: 'TFK',
+      username: process.env.P360_TFK_WS_USERNAME || 'domain/username',
+      password: process.env.P360_TFK_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_TFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+    },
+    {
+      name: 'VFK',
+      username: process.env.P360_VFK_WS_USERNAME || 'domain/username',
+      password: process.env.P360_VFK_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_VFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+    }
+  ],
+  tjommi: {
+    url: process.env.TJOMMI_SERVICE_URL || 'url-tjommi-secret',
+    jwtSecret: process.env.TJOMMI_JWT_SECRET || 'jwt-secret'
   },
   auth: {
     /*

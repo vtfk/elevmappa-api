@@ -6,8 +6,8 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "BUDDY_SERVICE_URL": "@minelev-buddy-service-url",
-    "BUDDY_JWT_SECRET": "@minelev-jwt-secret",
+    "TJOMMI_SERVICE_URL": "@minelev-tjommi-service-url",
+    "TJOMMI_JWT_SECRET": "@minelev-jwt-secret",
     "MOA_TENANT_ID": "@moa-tenant-id",
     "MOA_APP_ID": "@moa-app-id"
   },

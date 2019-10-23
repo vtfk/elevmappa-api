@@ -140,13 +140,13 @@ Returns an object of given student with available documents
 
 ## Setup
 
-You'll need an azure tenant and a jwt and endpoint url for your Buddy service.
+You'll need an azure tenant and a jwt and endpoint url for your Tjommi service.
 
 Environment
 
 ```
-BUDDY_SERVICE_URL=https://buddy.service.io
-BUDDY_JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
+TJOMMI_SERVICE_URL=https://tjommi.service.io
+TJOMMI_JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
 MOA_TENANT_ID=your-azure-tenant
 P360_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
 P360_WS_USERNAME=domain/username
@@ -158,7 +158,7 @@ PAPERTRAIL_HOSTNAME=minelev-elevmappa
 
 ## Related
 
-- [minelev-buddy](https://github.com/telemark/minelev-buddy) - Buddy service for MinElev
+- [minelev-tjommi-api](https://github.com/telemark/minelev-tjommi-api) - Tjommi service for MinElev
 
 ## License
 
