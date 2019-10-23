@@ -1,7 +1,7 @@
 {
   "name": "elevmappa-api",
   "version": "1.0.0",
-  "description": "micro azure oidc auth minelev",
+  "description": "micro azure oidc auth elevmappa",
   "main": "index.js",
   "scripts": {
     "start": "micro",
@@ -16,31 +16,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/telemark/minelev-my-students.git"
+    "url": "git+https://github.com/vtfk/elevmappa-api.git"
   },
   "keywords": [
-    "minelev",
-    "telemark",
+    "vtfk",
     "azure",
     "micro"
   ],
   "author": {
-    "name": "Geir Gåsodden",
-    "email": "geir.gasodden@pythonia.no",
-    "url": "https://github.com/zrrrzzt"
+    "name": "Jonas Maccyber Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
   },
   "contributors": [
     {
-      "name": "Jonas Maccyber Enge",
-      "email": "jonas.enge@gmail.com",
-      "url": "https://github.com/maccyber"
+      "name": "Mats Andreassen",
+      "email": "mats.andreassen@vtfk.no",
+      "url": "https://github.com/matsand"
     }
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/telemark/minelev-my-students/issues"
+    "url": "https://github.com/vtfk/elevmappa-api/issues"
   },
-  "homepage": "https://github.com/telemark/minelev-my-students#readme",
+  "homepage": "https://github.com/vtfk/elevmappa-api#readme",
   "devDependencies": {
     "ava": "2.4.0",
     "coveralls": "3.0.7",
