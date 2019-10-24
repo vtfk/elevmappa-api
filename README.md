@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/telemark/minelev-elevmappa-api.svg?branch=master)](https://travis-ci.com/telemark/minelev-elevmappa-api)
+[![Build Status](https://travis-ci.com/vtfk/elevmappa-api.svg?branch=master)](https://travis-ci.com/vtfk/elevmappa-api)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # elevmappa-api
