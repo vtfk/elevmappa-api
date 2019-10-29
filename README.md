@@ -125,7 +125,7 @@ Returns an object of given student with available documents
       ]
     },
     {
-      "source": "VTFK",
+      "source": "VTFK Sikker",
       "id": "20/00345-1",
       "title": "It came from Søre Ål",
       "files": [
@@ -151,9 +151,12 @@ Environment
 TJOMMI_SERVICE_URL=https://tjommi.service.io
 TJOMMI_JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
 MOA_TENANT_ID=your-azure-tenant
-P360_VTFK_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
-P360_VTFK_WS_USERNAME=domain/username
-P360_VTFK_WS_PASSWORD=password
+P360_VTFKINT_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
+P360_VTFKINT_WS_USERNAME=domain/username
+P360_VTFKINT_WS_PASSWORD=password
+P360_VTFKSIK_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
+P360_VTFKSIK_WS_USERNAME=domain/username
+P360_VTFKSIK_WS_PASSWORD=password
 P360_TFK_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
 P360_TFK_WS_USERNAME=domain/username
 P360_TFK_WS_PASSWORD=password

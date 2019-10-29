@@ -1,27 +1,27 @@
 module.exports = {
   P360: [
     {
-      name: 'VTFK',
-      username: process.env.P360_VTFK_WS_USERNAME || 'domain/username',
-      password: process.env.P360_VTFK_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_VTFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
-    },
-    {
       name: 'TFK',
       username: process.env.P360_TFK_WS_USERNAME || 'domain/username',
       password: process.env.P360_TFK_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_TFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
     },
     {
-      name: 'VFK',
-      username: process.env.P360_VFK_WS_USERNAME || 'domain/username',
-      password: process.env.P360_VFK_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_VFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      name: 'VTFK Intern',
+      username: process.env.P360_VTFKINT_WS_USERNAME || 'domain/username',
+      password: process.env.P360_VTFKINT_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_VTFKINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+    },
+    {
+      name: 'VTFK Sikker',
+      username: process.env.P360_VTFKSIK_WS_USERNAME || 'domain/username',
+      password: process.env.P360_VTFKSIK_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_VTFKSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
     }
   ],
   tjommi: {
-    url: process.env.TJOMMI_SERVICE_URL || 'url-tjommi-secret',
-    jwtSecret: process.env.TJOMMI_JWT_SECRET || 'jwt-secret'
+    url: process.env.TJOMMI_SERVICE_URL || 'url-tjommi',
+    jwtSecret: process.env.TJOMMI_JWT_SECRET || 'jwt-secret-tjommi'
   },
   auth: {
     /*
