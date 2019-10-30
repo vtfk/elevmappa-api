@@ -1,24 +1,29 @@
+const getActiveSources = sources => sources.filter(({ enabled }) => enabled)
+
 module.exports = {
-  P360: [
+  P360: getActiveSources([
     {
       name: 'TFK',
+      enabled: process.env.P360_TFK_ENABLED === 'true',
       username: process.env.P360_TFK_WS_USERNAME || 'domain/username',
       password: process.env.P360_TFK_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_TFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
     },
     {
       name: 'VTFK Intern',
+      enabled: process.env.P360_VTFKINT_ENABLED === 'true',
       username: process.env.P360_VTFKINT_WS_USERNAME || 'domain/username',
       password: process.env.P360_VTFKINT_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_VTFKINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
     },
     {
       name: 'VTFK Sikker',
+      enabled: process.env.P360_VTFKSIK_ENABLED === 'true',
       username: process.env.P360_VTFKSIK_WS_USERNAME || 'domain/username',
       password: process.env.P360_VTFKSIK_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_VTFKSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
     }
-  ],
+  ]),
   tjommi: {
     url: process.env.TJOMMI_SERVICE_URL || 'url-tjommi',
     jwtSecret: process.env.TJOMMI_JWT_SECRET || 'jwt-secret-tjommi'
