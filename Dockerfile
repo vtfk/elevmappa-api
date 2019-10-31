@@ -1,10 +1,18 @@
-FROM mhart/alpine-node:10 as base
-WORKDIR /usr/src
-COPY package.json package-lock.json /usr/src/
-RUN npm i --production
-COPY . .
+# Use Node v7 as the base image.
+FROM node:12
 
-FROM mhart/alpine-node:base-10
-WORKDIR /usr/src
-COPY --from=base /usr/src .
+# Provides cached layer for node_modules
+ADD package.json /tmp/package.json
+RUN cd /tmp && npm install
+RUN mkdir -p /app && cp -a /tmp/node_modules /app/
+
+# Define working directory
+WORKDIR /app
+# Add everything in the current directory to our image, in the 'app' folder.
+ADD . /app
+
+# Expose our server port.
+EXPOSE 3000
+
+# Run our app.
 CMD ["node", "./node_modules/.bin/micro"]
