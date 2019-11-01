@@ -174,6 +174,19 @@ ARCHEO_TOKEN=archeo-api-token
 ARCHEO_TRANSACTIONTYPE=Elevmappa
 ```
 
+
+## Docker local build
+
+### Build docker image
+```
+docker build --tag elevmappa-api .
+```
+
+### Run docker image
+```
+docker run -d -p 8080:8080 -it elevmappa-api
+```
+
 ## Related
 
 - [minelev-tjommi-api](https://github.com/telemark/minelev-tjommi-api) - Tjommi service for MinElev
