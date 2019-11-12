@@ -1,5 +1,5 @@
 // Disables certificate check :-(
-// process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 
 const getActiveSources = sources => sources.filter(({ enabled }) => enabled)
 
