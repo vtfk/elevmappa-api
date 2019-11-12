@@ -1,5 +1,5 @@
 # Use Node v7 as the base image.
-FROM node:12
+FROM mhart/alpine-node:13
 
 # Provides cached layer for node_modules
 ADD package.json /tmp/package.json
