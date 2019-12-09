@@ -1,32 +1,32 @@
-// Disables certificate check :-(
-// process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
-
-const getActiveSources = sources => sources.filter(({ enabled }) => enabled)
-
 module.exports = {
-  P360: getActiveSources([
+  P360: [
+
+    /**
+     * Types:
+     *  - RPC, requires token
+     *  - SIF, requires username and password
+     */
+
     {
       name: 'TFK',
-      enabled: process.env.P360_TFK_ENABLED === 'true',
+      type: process.env.P360_TFK_TYPE || 'SIF',
       username: process.env.P360_TFK_WS_USERNAME || 'domain/username',
       password: process.env.P360_TFK_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_TFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
     },
     {
       name: 'VTFK Intern',
-      enabled: process.env.P360_VTFKINT_ENABLED === 'true',
-      username: process.env.P360_VTFKINT_WS_USERNAME || 'domain/username',
-      password: process.env.P360_VTFKINT_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_VTFKINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      type: process.env.P360_VTFKINT_TYPE || 'RPC',
+      token: process.env.P360_VTFKINT_WS_TOKEN || 'token',
+      baseUrl: process.env.P360_VTFKINT_WS_BASE_URL || 'https://p360server.domain.no/'
     },
     {
       name: 'VTFK Sikker',
-      enabled: process.env.P360_VTFKSIK_ENABLED === 'true',
-      username: process.env.P360_VTFKSIK_WS_USERNAME || 'domain/username',
-      password: process.env.P360_VTFKSIK_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_VTFKSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      type: process.env.P360_VTFKSIK_TYPE || 'RPC',
+      token: process.env.P360_VTFKSIK_WS_TOKEN || 'token',
+      baseUrl: process.env.P360_VTFKSIK_WS_BASE_URL || 'https://p360server.domain.no/'
     }
-  ]),
+  ],
   tjommi: {
     url: process.env.TJOMMI_SERVICE_URL || 'url-tjommi',
     jwtSecret: process.env.TJOMMI_JWT_SECRET || 'jwt-secret-tjommi'

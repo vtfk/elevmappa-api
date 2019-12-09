@@ -52,6 +52,7 @@
   "dependencies": {
     "@alheimsins/p360": "1.0.2",
     "@vtfk/logger": "1.0.3",
+    "@vtfk/p360": "^1.0.0",
     "axios": "0.19.0",
     "axios-cache-adapter": "2.5.0",
     "cors": "2.8.5",
