@@ -5,8 +5,7 @@ module.exports = {
      * Types:
      *  - RPC, requires token
      *  - SIF, requires username and password
-     */
-
+    */
     {
       name: 'TFK',
       type: process.env.P360_TFK_TYPE || 'SIF',
