@@ -4,11 +4,11 @@ module.exports = {
     /**
      * Types:
      *  - RPC, requires token
-     *  - SIF, requires username and password
+     *  - SOAP, requires username and password
     */
     {
       name: 'TFK',
-      type: process.env.P360_TFK_TYPE || 'SIF',
+      type: process.env.P360_TFK_TYPE || 'SOAP',
       username: process.env.P360_TFK_WS_USERNAME || 'domain/username',
       password: process.env.P360_TFK_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_TFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'

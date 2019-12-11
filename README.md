@@ -3,7 +3,8 @@
 
 # elevmappa-api
 
-Lambda for returning all your students
+Lambda for returning all your students. Used in [elevmappa](https://github.com/vtfk/elevmappa-web).
+Supports multiple 360° instances.
 
 ## API
 
@@ -151,21 +152,13 @@ Environment
 TJOMMI_SERVICE_URL=https://tjommi.service.io
 TJOMMI_JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
 MOA_TENANT_ID=your-azure-tenant
-P360_VTFKINT_ENABLED=false
-P360_VTFKINT_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
-P360_VTFKINT_WS_USERNAME=domain/username
-P360_VTFKINT_WS_PASSWORD=password
-P360_VTFKSIK_ENABED=false
-P360_VTFKSIK_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
-P360_VTFKSIK_WS_USERNAME=domain/username
-P360_VTFKSIK_WS_PASSWORD=password
-P360_TFK_ENABLED=true
-P360_TFK_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
-P360_TFK_WS_USERNAME=domain/username
+P360_TFK_WS_USERNAME=username
 P360_TFK_WS_PASSWORD=password
-P360_VFK_WS_BASE_URL=http://siweb.domain.no:8088/SI.WS.Core/SIF/
-P360_VFK_WS_USERNAME=domain/username
-P360_VFK_WS_PASSWORD=password
+P360_TFK_WS_BASE_URL=http://p360server/SI.WS.Core/SIF/
+P360_TFK_TYPE=SOAP
+P360_VTFKINT_WS_TOKEN=secret-access-token
+P360_VTFKINT_WS_BASE_URL=p360.no
+P360_VTFKINT_TYPE=RPC
 PAPERTRAIL_HOST=example.papertrailapp.com
 PAPERTRAIL_PORT=port
 PAPERTRAIL_HOSTNAME=minelev-elevmappa
