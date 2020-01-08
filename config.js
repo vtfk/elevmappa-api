@@ -15,15 +15,17 @@ module.exports = {
     },
     {
       name: 'VTFK Intern',
-      type: process.env.P360_VTFKINT_TYPE || 'RPC',
-      token: process.env.P360_VTFKINT_WS_TOKEN || 'token',
-      baseUrl: process.env.P360_VTFKINT_WS_BASE_URL || 'https://p360server.domain.no/'
+      type: process.env.P360_VTFKINT_TYPE || 'SOAP',
+      username: process.env.P360_VTFKINT_WS_USERNAME || 'domain/username',
+      password: process.env.P360_VTFKINT_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_VTFKINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
     },
     {
       name: 'VTFK Sikker',
-      type: process.env.P360_VTFKSIK_TYPE || 'RPC',
-      token: process.env.P360_VTFKSIK_WS_TOKEN || 'token',
-      baseUrl: process.env.P360_VTFKSIK_WS_BASE_URL || 'https://p360server.domain.no/'
+      type: process.env.P360_VTFKSIK_TYPE || 'SOAP',
+      username: process.env.P360_VTFKSIK_WS_USERNAME || 'domain/username',
+      password: process.env.P360_VTFKSIK_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_VTFKSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
     }
   ],
   tjommi: {
