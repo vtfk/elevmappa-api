@@ -7,7 +7,7 @@
     "start": "micro",
     "dev": "micro-dev -H localhost",
     "dev-s": "micro-dev -H localhost -s",
-    "test": "standard && npm audit --only=prod && ava",
+    "test": "standard && npm audit --production && ava",
     "test-offline": "standard && ava",
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
@@ -25,15 +25,15 @@
     "micro"
   ],
   "author": {
-    "name": "Jonas Maccyber Enge",
-    "email": "jonas.enge@gmail.com",
-    "url": "https://github.com/maccyber"
+    "name": "Mats Andreassen",
+    "email": "mats.andreassen@vtfk.no",
+    "url": "https://github.com/matsand"
   },
   "contributors": [
     {
-      "name": "Mats Andreassen",
-      "email": "mats.andreassen@vtfk.no",
-      "url": "https://github.com/matsand"
+      "name": "Jonas Maccyber Enge",
+      "email": "jonas.enge@gmail.com",
+      "url": "https://github.com/maccyber"
     }
   ],
   "license": "MIT",
