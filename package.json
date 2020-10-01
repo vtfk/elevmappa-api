@@ -7,7 +7,7 @@
     "start": "micro",
     "dev": "micro-dev -H localhost",
     "dev-s": "micro-dev -H localhost -s",
-    "test": "standard && npm audit && ava",
+    "test": "standard && npm audit --only=prod && ava",
     "test-offline": "standard && ava",
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
