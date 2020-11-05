@@ -50,7 +50,7 @@
     "test-listen": "1.1.0"
   },
   "dependencies": {
-    "@alheimsins/p360": "1.0.3",
+    "@alheimsins/p360": "1.0.4",
     "@vtfk/logger": "2.3.1",
     "@vtfk/p360": "^1.1.0",
     "axios": "0.20.0",
