@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@alheimsins/p360": "1.0.4",
-    "@vtfk/logger": "2.3.2",
+    "@vtfk/logger": "2.3.3",
     "@vtfk/p360": "^1.1.0",
     "axios": "0.20.0",
     "axios-cache-adapter": "2.5.0",
