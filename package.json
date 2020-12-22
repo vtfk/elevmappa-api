@@ -53,7 +53,7 @@
     "@alheimsins/p360": "1.0.4",
     "@vtfk/logger": "2.3.3",
     "@vtfk/p360": "^1.1.0",
-    "axios": "0.20.0",
+    "axios": "0.21.1",
     "axios-cache-adapter": "2.5.0",
     "body-parser": "^1.19.0",
     "cors": "2.8.5",
