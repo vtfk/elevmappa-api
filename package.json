@@ -1,6 +1,6 @@
 {
   "name": "elevmappa-api",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "micro azure oidc auth elevmappa",
   "main": "index.js",
   "scripts": {
