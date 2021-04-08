@@ -57,6 +57,6 @@ module.exports = {
     appId: process.env.MOA_APP_ID || 'your-app-id'
   },
   MONGODB_COLLECTION: process.env.MONGODB_COLLECTION || 'elev',
-  MONGODB_CONNECTION: process.env.MONGO_CONNECTION || 'conn',
+  MONGODB_CONNECTION: process.env.MONGODB_CONNECTION || 'conn',
   MONGODB_NAME: process.env.MONGODB_NAME || 'elev'
 }
