@@ -162,9 +162,9 @@ P360_VTFKINT_TYPE=RPC
 PAPERTRAIL_HOST=example.papertrailapp.com
 PAPERTRAIL_PORT=port
 PAPERTRAIL_HOSTNAME=minelev-elevmappa
-ARCHEO_URL=https://api.archeo.no/api/v1.1/log
-ARCHEO_TOKEN=archeo-api-token
-ARCHEO_TRANSACTIONTYPE=Elevmappa
+MONGODB_CONNECTION=mongodb+srv://<user>:<pwd>@<mongoserver>?retryWrites=true&w=majority
+MONGODB_NAME=minelev-elevmappa
+MONGODB_COLLECTION=minelev-elevmappa
 ```
 
 
