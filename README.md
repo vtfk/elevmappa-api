@@ -168,8 +168,17 @@ PAPERTRAIL_HOSTNAME=minelev-elevmappa
 MONGODB_CONNECTION=mongodb+srv://<user>:<pwd>@<mongoserver>?retryWrites=true&w=majority
 MONGODB_NAME=minelev-elevmappa
 MONGODB_COLLECTION=minelev-elevmappa
+DEMO=false
+DEMO_USER=noen.andre@vtfk.no
 ```
 
+## DEMO
+
+:warning: `DEMO mode will bypass authorization check and ALL calls will be performed as DEMO_USER. DO NOT USE IN PRODUCTION`
+
+When debugging locally there can be conveniant to experience exactly what a end-user sees.
+
+Set `DEMO` to **true** and `DEMO_USER` to **end-users email address** in `.env`
 
 ## Docker local build
 
