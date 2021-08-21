@@ -152,11 +152,13 @@ Environment
 TJOMMI_SERVICE_URL=https://tjommi.service.io
 TJOMMI_JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
 MOA_TENANT_ID=your-azure-tenant
+MOA_APP_ID=your-app-id
+P360_TFK_ENABLED=false
 P360_TFK_WS_USERNAME=username
 P360_TFK_WS_PASSWORD=password
 P360_TFK_WS_BASE_URL=http://p360server/SI.WS.Core/SIF/
 P360_TFK_TYPE=SOAP
-P360_VTFKINT_WS_TOKEN=secret-access-token
+P360_VTFKINT_ENABLED=true
 P360_VTFKINT_WS_BASE_URL=p360.no
 P360_VTFKINT_TYPE=RPC
 PAPERTRAIL_HOST=example.papertrailapp.com
