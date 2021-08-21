@@ -58,5 +58,7 @@ module.exports = {
   },
   MONGODB_COLLECTION: process.env.MONGODB_COLLECTION || 'elev',
   MONGODB_CONNECTION: process.env.MONGODB_CONNECTION || 'conn',
-  MONGODB_NAME: process.env.MONGODB_NAME || 'elev'
+  MONGODB_NAME: process.env.MONGODB_NAME || 'elev',
+  DEMO: (process.env.DEMO === 'true') || false,
+  DEMO_USER: process.env.DEMO_USER || undefined
 }
