@@ -11,6 +11,7 @@ module.exports = {
       name: 'TFK',
       enabled: process.env.P360_TFK_ENABLED || false,
       type: process.env.P360_TFK_TYPE || 'SOAP',
+      token: process.env.P360_TFK_TOKEN || '',
       username: process.env.P360_TFK_WS_USERNAME || 'domain/username',
       password: process.env.P360_TFK_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_TFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
@@ -19,6 +20,7 @@ module.exports = {
       name: 'VTFK',
       enabled: process.env.P360_VTFK_ENABLED || false,
       type: process.env.P360_VTFK_TYPE || 'SOAP',
+      token: process.env.P360_VTFK_TOKEN || '',
       username: process.env.P360_VTFK_WS_USERNAME || 'domain/username',
       password: process.env.P360_VTFK_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_VTFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
@@ -27,6 +29,7 @@ module.exports = {
       name: 'VTFK Intern',
       enabled: process.env.P360_VTFKINT_ENABLED || false,
       type: process.env.P360_VTFKINT_TYPE || 'SOAP',
+      token: process.env.P360_VTFKINT_TOKEN || '',
       username: process.env.P360_VTFKINT_WS_USERNAME || 'domain/username',
       password: process.env.P360_VTFKINT_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_VTFKINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
@@ -35,6 +38,7 @@ module.exports = {
       name: 'VTFK Sikker',
       enabled: process.env.P360_VTFKSIK_ENABLED || false,
       type: process.env.P360_VTFKSIK_TYPE || 'SOAP',
+      token: process.env.P360_VTFKSIK_TOKEN || '',
       username: process.env.P360_VTFKSIK_WS_USERNAME || 'domain/username',
       password: process.env.P360_VTFKSIK_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_VTFKSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
