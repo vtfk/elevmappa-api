@@ -64,5 +64,18 @@ module.exports = {
   MONGODB_CONNECTION: process.env.MONGODB_CONNECTION || 'conn',
   MONGODB_NAME: process.env.MONGODB_NAME || 'elev',
   DEMO: (process.env.DEMO === 'true') || false,
-  DEMO_USER: process.env.DEMO_USER || undefined
+  DEMO_USER: process.env.DEMO_USER || undefined,
+  DEMO_ACCESS_GROUPS: (process.env.DEMO_ACCESS_GROUPS && process.env.DEMO_ACCESS_GROUPS.toUpperCase().split(',')) || [],
+  ACCESS_GROUP_PREFIX: process.env.ACCESS_GROUP_PREFIX || 'MGR-OF',
+  ACCESS_GROUP_POSTFIX: process.env.ACCESS_GROUP_POSTFIX || 'TILGANGELEVMAPPA',
+  GRAPH: {
+    AUTH: {
+      URL: process.env.GRAPH_AUTH_URL || 'https://login.microsoftonline.com/vtfk.onmicrosoft.com/oauth2/v2.0/token',
+      CLIENT_ID: process.env.GRAPH_CLIENT_ID,
+      CLIENT_SECRET: process.env.GRAPH_CLIENT_SECRET,
+      GRANT_TYPE: process.env.GRAPH_GRANT_TYPE || 'client_credentials',
+      SCOPE: process.env.GRAPH_SCOPE || 'https://graph.microsoft.com/.default'
+    },
+    URL: process.env.GRAPH_API || 'https://graph.microsoft.com/v1.0'
+  }
 }
