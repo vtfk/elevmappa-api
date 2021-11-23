@@ -65,6 +65,7 @@ module.exports = {
   MONGODB_NAME: process.env.MONGODB_NAME || 'elev',
   DEMO: (process.env.DEMO === 'true') || false,
   DEMO_USER: process.env.DEMO_USER || undefined,
+  DEMO_SKIP_DB: (process.env.DEMO_SKIP_DB === 'true') || false,
   DEMO_ACCESS_GROUPS: (process.env.DEMO_ACCESS_GROUPS && process.env.DEMO_ACCESS_GROUPS.toUpperCase().split(',')) || [],
   ACCESS_GROUP_PREFIX: process.env.ACCESS_GROUP_PREFIX || 'MGR-OF',
   ACCESS_GROUP_POSTFIX: process.env.ACCESS_GROUP_POSTFIX || 'TILGANGELEVMAPPA',
