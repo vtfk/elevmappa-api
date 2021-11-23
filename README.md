@@ -181,6 +181,8 @@ When debugging locally there can be conveniant to experience exactly what a end-
 
 Set `DEMO` to **true** and `DEMO_USER` to **end-users email address** in `.env`
 
+If you want to debug end-user as a **rådgiver**, set `DEMO_ACCESS_GROUPS` to a comma separated list. See example above in *Setup\Environment*
+
 ## Docker local build
 
 ### Build docker image
