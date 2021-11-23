@@ -1,6 +1,7 @@
 const getActiveSources = sources => sources.filter(({ enabled }) => enabled)
 
 module.exports = {
+  PAPERTRAIL_DISABLE_LOGGING: (process.env.PAPERTRAIL_DISABLE_LOGGING === 'true') || false,
   P360: getActiveSources([
     /**
      * Types:

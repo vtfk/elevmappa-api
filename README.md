@@ -164,6 +164,7 @@ P360_VTFKINT_WS_BASE_URL=p360.no
 P360_VTFKINT_TYPE=RPC
 PAPERTRAIL_HOST=example.papertrailapp.com
 PAPERTRAIL_TOKEN=234532
+PAPERTRAIL_DISABLE_LOGGING=false
 MONGODB_CONNECTION=mongodb+srv://<user>:<pwd>@<mongoserver>?retryWrites=true&w=majority
 MONGODB_NAME=minelev-elevmappa
 MONGODB_COLLECTION=minelev-elevmappa
