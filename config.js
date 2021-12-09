@@ -43,6 +43,42 @@ module.exports = {
       username: process.env.P360_VTFKSIK_WS_USERNAME || 'domain/username',
       password: process.env.P360_VTFKSIK_WS_PASSWORD || 'password',
       baseUrl: process.env.P360_VTFKSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+    },
+    {
+      name: 'VFK Historisk Intern',
+      enabled: process.env.P360_VFK_HISTINT_ENABLED || false,
+      type: process.env.P360_VFK_HISTINT_TYPE || 'RPC',
+      token: process.env.P360_VFK_HISTINT_TOKEN || '',
+      username: process.env.P360_VFK_HISTINT_WS_USERNAME || 'domain/username',
+      password: process.env.P360_VFK_HISTINT_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_VFK_HISTINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+    },
+    {
+      name: 'TFK Historisk Intern',
+      enabled: process.env.P360_TFK_HISTINT_ENABLED || false,
+      type: process.env.P360_TFK_HISTINT_TYPE || 'RPC',
+      token: process.env.P360_TFK_HISTINT_TOKEN || '',
+      username: process.env.P360_TFK_HISTINT_WS_USERNAME || 'domain/username',
+      password: process.env.P360_TFK_HISTINT_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_TFK_HISTINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+    },
+    {
+      name: 'VFK Historisk Sikker',
+      enabled: process.env.P360_VFK_HISTSIK_ENABLED || false,
+      type: process.env.P360_VFK_HISTSIK_TYPE || 'RPC',
+      token: process.env.P360_VFK_HISTSIK_TOKEN || '',
+      username: process.env.P360_VFK_HISTSIK_WS_USERNAME || 'domain/username',
+      password: process.env.P360_VFK_HISTSIK_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_VFK_HISTSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+    },
+    {
+      name: 'TFK Historisk Sikker',
+      enabled: process.env.P360_TFK_HISTSIK_ENABLED || false,
+      type: process.env.P360_TFK_HISTSIK_TYPE || 'RPC',
+      token: process.env.P360_TFK_HISTSIK_TOKEN || '',
+      username: process.env.P360_TFK_HISTSIK_WS_USERNAME || 'domain/username',
+      password: process.env.P360_TFK_HISTSIK_WS_PASSWORD || 'password',
+      baseUrl: process.env.P360_TFK_HISTSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
     }
   ]),
   tjommi: {
