@@ -15,7 +15,9 @@ module.exports = {
       token: process.env.P360_TFK_TOKEN || '',
       username: process.env.P360_TFK_WS_USERNAME || 'domain/username',
       password: process.env.P360_TFK_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_TFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      baseUrl: process.env.P360_TFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/',
+      statuses: (process.env.P360_TFK_STATUSES && process.env.P360_TFK_STATUSES.split(',')) || ['Under behandling'],
+      statusCodes: (process.env.P360_TFK_STATUSCODES && process.env.P360_TFK_STATUSCODES.split(',').map(code => code.toUpperCase())) || ['J', 'E', 'F']
     },
     {
       name: 'VTFK',
@@ -24,7 +26,9 @@ module.exports = {
       token: process.env.P360_VTFK_TOKEN || '',
       username: process.env.P360_VTFK_WS_USERNAME || 'domain/username',
       password: process.env.P360_VTFK_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_VTFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      baseUrl: process.env.P360_VTFK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/',
+      statuses: (process.env.P360_VTFK_STATUSES && process.env.P360_VTFK_STATUSES.split(',')) || ['Under behandling'],
+      statusCodes: (process.env.P360_VTFK_STATUSCODES && process.env.P360_VTFK_STATUSCODES.split(',').map(code => code.toUpperCase())) || ['J', 'E', 'F']
     },
     {
       name: 'VTFK Intern',
@@ -33,7 +37,9 @@ module.exports = {
       token: process.env.P360_VTFKINT_TOKEN || '',
       username: process.env.P360_VTFKINT_WS_USERNAME || 'domain/username',
       password: process.env.P360_VTFKINT_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_VTFKINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      baseUrl: process.env.P360_VTFKINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/',
+      statuses: (process.env.P360_VTFKINT_STATUSES && process.env.P360_VTFKINT_STATUSES.split(',')) || ['Under behandling'],
+      statusCodes: (process.env.P360_VTFKINT_STATUSCODES && process.env.P360_VTFKINT_STATUSCODES.split(',').map(code => code.toUpperCase())) || ['J', 'E', 'F']
     },
     {
       name: 'VTFK Sikker',
@@ -42,7 +48,9 @@ module.exports = {
       token: process.env.P360_VTFKSIK_TOKEN || '',
       username: process.env.P360_VTFKSIK_WS_USERNAME || 'domain/username',
       password: process.env.P360_VTFKSIK_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_VTFKSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      baseUrl: process.env.P360_VTFKSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/',
+      statuses: (process.env.P360_VTFKSIK_STATUSES && process.env.P360_VTFKSIK_STATUSES.split(',')) || ['Under behandling'],
+      statusCodes: (process.env.P360_VTFKSIK_STATUSCODES && process.env.P360_VTFKSIK_STATUSCODES.split(',').map(code => code.toUpperCase())) || ['J', 'E', 'F']
     },
     {
       name: 'VFK Historisk Intern',
@@ -51,7 +59,9 @@ module.exports = {
       token: process.env.P360_VFK_HISTINT_TOKEN || '',
       username: process.env.P360_VFK_HISTINT_WS_USERNAME || 'domain/username',
       password: process.env.P360_VFK_HISTINT_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_VFK_HISTINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      baseUrl: process.env.P360_VFK_HISTINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/',
+      statuses: (process.env.P360_VFK_HISTINT_STATUSES && process.env.P360_VFK_HISTINT_STATUSES.split(',')) || ['Avsluttet'],
+      statusCodes: (process.env.P360_VFK_HISTINT_STATUSCODES && process.env.P360_VFK_HISTINT_STATUSCODES.split(',').map(code => code.toUpperCase())) || ['J', 'E', 'F']
     },
     {
       name: 'TFK Historisk Intern',
@@ -60,7 +70,9 @@ module.exports = {
       token: process.env.P360_TFK_HISTINT_TOKEN || '',
       username: process.env.P360_TFK_HISTINT_WS_USERNAME || 'domain/username',
       password: process.env.P360_TFK_HISTINT_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_TFK_HISTINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      baseUrl: process.env.P360_TFK_HISTINT_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/',
+      statuses: (process.env.P360_TFK_HISTINT_STATUSES && process.env.P360_TFK_HISTINT_STATUSES.split(',')) || ['Avsluttet'],
+      statusCodes: (process.env.P360_TFK_HISTINT_STATUSCODES && process.env.P360_TFK_HISTINT_STATUSCODES.split(',').map(code => code.toUpperCase())) || ['J', 'E', 'F']
     },
     {
       name: 'VFK Historisk Sikker',
@@ -69,7 +81,9 @@ module.exports = {
       token: process.env.P360_VFK_HISTSIK_TOKEN || '',
       username: process.env.P360_VFK_HISTSIK_WS_USERNAME || 'domain/username',
       password: process.env.P360_VFK_HISTSIK_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_VFK_HISTSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      baseUrl: process.env.P360_VFK_HISTSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/',
+      statuses: (process.env.P360_VFK_HISTSIK_STATUSES && process.env.P360_VFK_HISTSIK_STATUSES.split(',')) || ['Avsluttet'],
+      statusCodes: (process.env.P360_VFK_HISTSIK_STATUSCODES && process.env.P360_VFK_HISTSIK_STATUSCODES.split(',').map(code => code.toUpperCase())) || ['J', 'E', 'F']
     },
     {
       name: 'TFK Historisk Sikker',
@@ -78,7 +92,9 @@ module.exports = {
       token: process.env.P360_TFK_HISTSIK_TOKEN || '',
       username: process.env.P360_TFK_HISTSIK_WS_USERNAME || 'domain/username',
       password: process.env.P360_TFK_HISTSIK_WS_PASSWORD || 'password',
-      baseUrl: process.env.P360_TFK_HISTSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/'
+      baseUrl: process.env.P360_TFK_HISTSIK_WS_BASE_URL || 'http://p360server.domain.no:8088/SI.WS.Core/SIF/',
+      statuses: (process.env.P360_TFK_HISTSIK_STATUSES && process.env.P360_TFK_HISTSIK_STATUSES.split(',')) || ['Avsluttet'],
+      statusCodes: (process.env.P360_TFK_HISTSIK_STATUSCODES && process.env.P360_TFK_HISTSIK_STATUSCODES.split(',').map(code => code.toUpperCase())) || ['J', 'E', 'F']
     }
   ]),
   tjommi: {
